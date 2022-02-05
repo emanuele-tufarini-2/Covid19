@@ -16,9 +16,3 @@ root : andamento_percentuale_covid19_tuscania.csv
  |-- età: string (nullable = true)
  |-- percentuale_contagi: integer (nullable = true)
 ```
-
-![alt text](https://raw.githubusercontent.com/emanuele-tufarini-2/Tuscania-Covid19-Dataset/main/image/grafico_a_linee_media_mobile_04022022.png)
-
-![alt text](https://raw.githubusercontent.com/emanuele-tufarini-2/Tuscania-Covid19-Dataset/main/image/grafico_ad_area_totale_positivi_media_mobile_04022022_r1.png)
-
-![alt text](https://raw.githubusercontent.com/emanuele-tufarini-2/Tuscania-Covid19-Dataset/main/image/grafico_a_torta_04022022.png)
