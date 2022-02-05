@@ -18,6 +18,6 @@ root : andamento_percentuale_covid19_tuscania.csv
 ```
 ![alt text](https://github.com/emanuele-tufarini-2/Tuscania-Covid19-Dataset/blob/main/image/grafico_a_linee.png)
 
-![alt text](https://github.com/emanuele-tufarini-2/Tuscania-Covid19-Dataset/blob/main/image/grafico_ad_area.png)
+![alt text](https://raw.githubusercontent.com/emanuele-tufarini-2/Tuscania-Covid19-Dataset/main/image/grafico_ad_area.png)
 
 ![alt text](https://github.com/emanuele-tufarini-2/Tuscania-Covid19-Dataset/blob/main/image/grafico_a_torta.png)
