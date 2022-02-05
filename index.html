@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+	
+<!-- CSS Cascading Style Sheets (temporaneo) -->
 <style>
 *{transition:all 0.3s ease-in-out;}
 
@@ -29,19 +31,42 @@ ul li:hover{
 img {
 	display: block;
 }
+
+table {
+	float: left;
+	border-collapse: collapse;
+	border: 2px black solid;
+	font: 12px sans-serif;
+}
+
+
+td {
+	border: 1px black solid;
+	padding: 5px;
+}
+
+tr:nth-child(n+12){
+	display:none;
+}
+
+table .pic::test {
+  position: absolute;
+}
 </style>
 <body>
-	
+
+<!-- Logo del sito -->
 <div class="container">
 <div class="logo">  
 <img src="logo.png" alt="" width="70"/>
 </div>
 
+<!-- Generare la navbar -->
 <nav>
 <ul>
 <div class="show"> <img src="null" class="menuicon" alt="" width="60">
 <div class="hide">
-<li>HOME</li>
+<li><a href="https://emanuele-tufarini-2.github.io/Tuscania-Covid19-Dataset/">HOME</a></li>
 </div>
 </ul>
 </div>
@@ -49,15 +74,37 @@ img {
 </nav>
 <hr />
 
+<!-- Titolo della pagina -->
 <h1>Covid19 Tuscania Dataset</h1>
 
+<!-- Caricare d3.js -->
+<script src="https://d3js.org/d3.v3.js"></script>
+
+<!-- URL al dataset -->
 <p><a href="https://github.com/emanuele-tufarini-2/Tuscania-Covid19-Dataset/blob/main/andamento_contagi_covid19_tuscania.csv">Covid19 Tuscania Dataset</a></p>
 
-<div class='tableauPlaceholder' id='viz1644068932676' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='positivi_negativizzati_covid19_tuscania&#47;CHART1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='it-IT' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1644068932676');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<!-- Mostrare la tabella aggiornata generata con d3.js -->
+<script>
+d3.text("https://raw.githubusercontent.com/emanuele-tufarini-2/Tuscania-Covid19-Dataset/main/andamento_contagi_covid19_tuscania.csv", function(data) {
+    var parsedCSV = d3.csv.parseRows(data);
 
-<div class='tableauPlaceholder' id='viz1644068902111' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='totale_positivi_covid19_tuscania&#47;CHART2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='it-IT' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1644068902111');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    var container = d3.select("body")
+        .append("table")
 
-<div class='tableauPlaceholder' id='viz1644068733239' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='grafico_a_torta_covid19_tuscania&#47;Foglio1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='it-IT' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1644068733239');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    .selectAll("tr")
+        .data(parsedCSV).enter()
+        .append("tr")
+
+    .selectAll("td")
+        .data(function(d) {
+            return d;
+        }).enter()
+        .append("td")
+        .text(function(d) {
+            return d;
+        });
+});
+</script>
 
 </body>
 </html>
