@@ -23,7 +23,7 @@ ul li:hover{
 }
 
 h1 {
-	font-size: 80px; 
+	font-size: 100px; 
 }
 
 p {
@@ -52,7 +52,7 @@ table {
 }
 
 td {
-	font-size: 40px; 
+	font-size: 50px; 
 	border: 1px black solid;
 	padding: 5px;
 }
