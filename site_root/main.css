@@ -1,0 +1,74 @@
+*{transition:all 0.3s ease-in-out;}
+
+.container{
+	clear:both;
+	overflow:auto;
+}
+
+nav{float:right; padding-right: 10%;}
+
+.logo img{float: left; padding-left: 10%;}
+
+ul li{
+	display: inline-block; padding:10px;
+	font-size:18px; font-family:raleway;
+}
+
+ul li:hover{
+	color:#2EA3F2;
+  
+}
+
+.menuicon {
+	display: none;
+}
+
+h1 {
+	font-size: 36px; 
+}
+
+p {
+	font-size: 22px; 
+}
+  
+img {
+	display: block;
+}
+
+/* Non sottolineare il link */
+a {
+	font-size: 22px; 
+	text-decoration: none;
+}
+
+/* Non cambiare il colore del link una volta visualizzato */
+.main_menu, .main_menu:visited {
+    color: inherit;
+}
+
+table {
+	width: 90%;
+	border-collapse: collapse;
+	border: 2px black solid;
+}
+
+
+td {
+	font-size: 22px; 
+	border: 1px black solid;
+	padding: 5px;
+}
+
+tr:nth-child(n+12){
+	display:none;
+}
+
+.chart {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+a:hover{
+	color:#2EA3F2;
+}
