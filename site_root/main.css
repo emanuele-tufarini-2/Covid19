@@ -23,6 +23,15 @@ ul li:hover{
 	color:#2EA3F2;
 }
 
+.main_menu {
+	font-size: 32px; 
+}
+
+#main_icon {
+	width: 100px; 
+}
+
+
 /* CSS */
 
 h1 {
