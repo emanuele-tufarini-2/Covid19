@@ -28,7 +28,7 @@ h1 {
 }
 
 p {
-	font-size: 2em; 
+	font-size: 20px; 
 }
   
 img {
@@ -37,7 +37,7 @@ img {
 
 /* Non sottolineare il link */
 a {
-	font-size: 2em; 
+	font-size: 20px; 
 	text-decoration: none;
 }
 
@@ -54,7 +54,7 @@ table {
 
 
 td {
-	font-size: 2em; 
+	font-size: 20px; 
 	border: 1px black solid;
 	padding: 5px;
 }

@@ -27,20 +27,16 @@ h1 {
 }
 
 p {
-	font-size: 2em; 
+	font-size: 40px; 
 }
   
 img {
 	display: block;
 }
 
-p a {
-	font-size: 2em; 
-}
-
 /* Non sottolineare il link */
 a {
-	font-size: 2em; 
+	font-size: 40px; 
 	text-decoration: none;
 }
 
@@ -56,7 +52,7 @@ table {
 }
 
 td {
-	font-size: 2em; 
+	font-size: 40px; 
 	border: 1px black solid;
 	padding: 5px;
 }
