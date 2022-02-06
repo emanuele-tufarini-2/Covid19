@@ -7,11 +7,10 @@
 
 nav{float:right;}
 
-.logo img{float: left;}
+.logo img{float: left; padding-top:10px;}
 
 ul li{
 	display: inline-block; padding:10px;
-	font-size:18px; font-family:raleway;
 }
 
 ul li:hover{
