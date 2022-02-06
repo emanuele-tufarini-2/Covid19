@@ -23,11 +23,11 @@ ul li:hover{
 }
 
 h1 {
-	font-size: 36px; 
+	font-size: 4em; 
 }
 
 p {
-	font-size: 22px; 
+	font-size: 2em; 
 }
   
 img {
@@ -36,7 +36,7 @@ img {
 
 /* Non sottolineare il link */
 a {
-	font-size: 22px; 
+	font-size: 2em; 
 	text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ table {
 
 
 td {
-	font-size: 22px; 
+	font-size: 2em; 
 	border: 1px black solid;
 	padding: 5px;
 }
