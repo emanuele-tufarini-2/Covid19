@@ -1,3 +1,4 @@
+/* NAVBAR */
 *{transition:all 0.3s ease-in-out;}
 
 .container{
@@ -5,9 +6,13 @@
 	overflow:auto;
 }
 
-nav{float:right;}
+nav{
+	float:right;
+}
 
-.logo img{float: left; padding-top:10px;}
+.logo img{
+	float: left; 
+}
 
 ul li{
 	display: inline-block; 
@@ -18,9 +23,10 @@ ul li:hover{
 	color:#2EA3F2;
 }
 
-.menuicon {
-	display: none;
-}
+
+
+
+/* CSS */
 
 h1 {
 	font-size: 4em; 
@@ -45,6 +51,7 @@ a {
     color: inherit;
 }
 
+/* Tabella */
 table {
 	width: 90%;
 	border-collapse: collapse;
@@ -62,6 +69,7 @@ tr:nth-child(n+12){
 	display:none;
 }
 
+/* Grafici */
 .chart {
 	display: block;
 	padding-top: 20px;
