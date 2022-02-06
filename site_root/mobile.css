@@ -34,6 +34,10 @@ img {
 	display: block;
 }
 
+p a {
+	font-size: 2em; 
+}
+
 /* Non sottolineare il link */
 a {
 	font-size: 2em; 
