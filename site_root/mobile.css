@@ -5,13 +5,13 @@
 	overflow:auto;
 }
 
-nav{float:right; padding-right: 10%;}
+nav{float:right}
 
-.logo img{float: left; padding-left: 10%;}
+.logo img{float: left}
 
 ul li{
 	display: inline-block; padding:10px;
-	font-size:18px; font-family:raleway;
+	font-size:40px; font-family:raleway;
 }
 
 ul li:hover{
@@ -71,4 +71,9 @@ tr:nth-child(n+12){
 
 a:hover{
 	color:#2EA3F2;
+}
+
+body {
+	padding-left: 5%;
+	padding-right: 5%;
 }
