@@ -6,7 +6,10 @@
 <!-- CSS Cascading Style Sheets -->
 <link rel="stylesheet" media="screen and (min-width: 1080px)" href="./site_root/main.css">	
 <link rel="stylesheet" media="screen and (max-width: 1080px)" href="./site_root/mobile.css">	
-
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="./site_root/javascript/make_chart_1.js"></script>
+<script src="./site_root/javascript/make_chart_2.js"></script>
+<script src="./site_root/javascript/make_chart_3.js"></script>
 </head>
 
 <body style="background-color: White;">
@@ -45,14 +48,15 @@
 <!-- Inserire i grafici SVG -->
 <p>NUOVI POSITIVI</p>
 
-<object class="chart" data="./site_root/chart1.svg"> </object>
+<div id="make_chart_1" class="chart"></div>
 
 <p>NEGATIVIZZATI</p>
 
-<object class="chart" data="./site_root/chart2.svg"> </object>
+<div id="make_chart_2" class="chart"></div>
+
 <p>ATTUALMENTE POSITIVI</p>
 
-<object class="chart" data="./site_root/chart3.svg"> </object>
+<div id="make_chart_3" class="chart"></div>
 
 <p>ANDAMENTO DELLA PERCENTUALE DEI CONTAGI DA COVID19 NELLA POPOLAZIONE AL 20 GENNAIO 2022</p>
 
@@ -62,27 +66,9 @@
 <p><a href="https://github.com/emanuele-tufarini-2/Tuscania-Covid19-Dataset/blob/main/andamento_percentuale_covid19_tuscania.csv">Clicca qui per visualizzare il dataset (%)</a></p>
 
 <!-- Mostrare la tabella aggiornata generata con d3.js -->
-<script>
-d3.text("https://raw.githubusercontent.com/emanuele-tufarini-2/Tuscania-Covid19-Dataset/main/andamento_contagi_covid19_tuscania.csv", function(data) {
-    var parsedCSV = d3.csv.parseRows(data);
+<script src="./site_root/javascript/make_table.js"></script>
 
-    var container = d3.select("#make_table")
-        .append("table")
 
-    .selectAll("tr")
-        .data(parsedCSV).enter()
-        .append("tr")
-
-    .selectAll("td")
-        .data(function(d) {
-            return d;
-        }).enter()
-        .append("td")
-        .text(function(d) {
-            return d;
-        });
-});
-</script>
 
 </body>
 </html>
