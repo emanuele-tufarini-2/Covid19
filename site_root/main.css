@@ -24,18 +24,18 @@ ul li:hover{
 }
 
 .main_menu {
-	font-size: 2em; 
+	font-size: 32px; 
 }
 
 #main_icon {
 	width: 80px; 
-	padding-top: 8px;
+	padding-top: 6px;
 }
 
 /* CSS */
 
 h1 {
-	font-size: 2em; 
+	font-size: 32px; 
 }
 
 p {
