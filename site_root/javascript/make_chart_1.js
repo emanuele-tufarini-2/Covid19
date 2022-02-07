@@ -59,9 +59,9 @@ function drawChart() {
 		curveType: 'function',
 		legend:"none",
 		colors: ['red'],
-		pointSize: 5,
+		pointSize: 3,
 		hAxis: {
-			format: 'M/d/yy',
+			format: 'MM/dd/yy',
 			gridlines: {count: 15}
 		},
 		chartArea: {
@@ -85,7 +85,7 @@ function drawChart() {
 		colors: ['green'],
 		pointSize: 5,
 		hAxis: {
-			format: 'M/d/yy',
+			format: 'MM/dd/yy',
 			gridlines: {count: 15}
 		},
 		chartArea: {
@@ -111,7 +111,7 @@ function drawChart() {
 		colors: ['blue'],
 		pointSize: 5,
 		hAxis: {
-			format: 'M/d/yy',
+			format: 'MM/dd/yy',
 			gridlines: {count: 15}
 		},
 		chartArea: {
