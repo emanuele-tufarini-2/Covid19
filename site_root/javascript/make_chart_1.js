@@ -63,8 +63,8 @@ function drawChart() {
 			format: 'd/MM'
 		},
 		chartArea: {
-			height: "94%",
-			width: "94%"
+			height: "100%",
+			width: "92%"
 		}
 	};
 
@@ -85,8 +85,8 @@ function drawChart() {
 			format: 'd/MM'
 		},
 		chartArea: {
-			height: "94%",
-			width: "94%"
+			height: "100%",
+			width: "92%"
 		}
 	};
 
@@ -109,8 +109,8 @@ function drawChart() {
 			format: 'd/MM'
 		},
 		chartArea: {
-			height: "94%",
-			width: "94%"
+			height: "100%",
+			width: "92%"
 		}
 	};
 

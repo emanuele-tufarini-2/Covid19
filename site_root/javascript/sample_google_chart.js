@@ -14,7 +14,7 @@ var col00 = csvSlice.map(d => d[0]);
 // convertire l array str in date
 var col00 = col00.map(d => new Date(d))
 // inserire una colonna dell oggetto in un array
-var col01 = csvSlice.map(d => d[2]);
+var col01 = csvSlice.map(d => d[1]);
 // convertire l array str in int
 var col01 = col01.map(i=>Number(i));
 // unire due array in un array multidimensionale
