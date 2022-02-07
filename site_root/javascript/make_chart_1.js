@@ -62,15 +62,17 @@ function drawChart() {
 		pointSize: 3,
 		hAxis: {
 			format: 'dd/MM/yy',
-			slantedText: true
+			slantedText: true,
+			slantedTextAngle: -90
 		},
 		chartArea: {
-			height: "80%",
+			height: "70%",
 			width: "90%"
 		}
 	};
 
 	var chart = new google.visualization.LineChart(document.getElementById('make_chart_1'));
+	
 	chart.draw(data, options);
 	
 	
@@ -86,10 +88,11 @@ function drawChart() {
 		pointSize: 3,
 		hAxis: {
 			format: 'dd/MM/yy',
-			slantedText: true
+			slantedText: true,
+			slantedTextAngle: -90
 		},
 		chartArea: {
-			height: "80%",
+			height: "70%",
 			width: "90%"
 		}
 	};
@@ -112,15 +115,17 @@ function drawChart() {
 		pointSize: 3,
 		hAxis: {
 			format: 'dd/MM/yy',
-			slantedText: true
+			slantedText: true,
+			slantedTextAngle: -90
 		},
 		chartArea: {
-			height: "80%",
+			height: "70%",
 			width: "90%"
 		}
 	};
 
 	var chart = new google.visualization.LineChart(document.getElementById('make_chart_3'));
+	
 	chart.draw(data, options);
 	
 	
