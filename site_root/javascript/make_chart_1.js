@@ -48,7 +48,7 @@ var item_3 = col00.map(function(v,i) {
 
 
 // GRAFICO NUOVI POSITIVI TUSCANIA
-google.charts.load('current', {'packages':['corechart']});
+google.charts.load('current', {'packages':['corechart'], language: 'it'});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
