@@ -59,11 +59,13 @@ function drawChart() {
 		curveType: 'function',
 		legend:"none",
 		colors: ['red'],
+		pointSize: 5,
 		hAxis: {
-			format: ''
+			format: 'M/d/yy',
+			gridlines: {count: 15}
 		},
 		chartArea: {
-			height: "90%",
+			height: "80%",
 			width: "90%"
 		}
 	};
@@ -81,11 +83,13 @@ function drawChart() {
 		curveType: 'function',
 		legend:"none",
 		colors: ['green'],
+		pointSize: 5,
 		hAxis: {
-			format: ''
+			format: 'M/d/yy',
+			gridlines: {count: 15}
 		},
 		chartArea: {
-			height: "90%",
+			height: "80%",
 			width: "90%"
 		}
 	};
@@ -105,11 +109,13 @@ function drawChart() {
 		curveType: 'function',
 		legend:"none",
 		colors: ['blue'],
+		pointSize: 5,
 		hAxis: {
-			format: ''
+			format: 'M/d/yy',
+			gridlines: {count: 15}
 		},
 		chartArea: {
-			height: "90%",
+			height: "80%",
 			width: "90%"
 		}
 	};
