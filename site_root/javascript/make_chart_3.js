@@ -21,15 +21,13 @@ var col01 = col01.map(i=>Number(i));
 var item = col00.map(function(v,i) {
 	return [v, col01[i]];
 });
-// stampare il contenuto dell oggetto nella console
-console.log(JSON.stringify(item));
 
 // GRAFICO NUOVI POSITIVI TUSCANIA
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-	var data = google.visualization.arrayToDataTable(item, true);
+	var data = google.visualization.arrayToDataTable(item, true);;
 	console.log(JSON.stringify(data));
 	var options = {
 		title: 'attualmente positivi tuscania',
@@ -45,7 +43,6 @@ function drawChart() {
 		}
 	};
 
-	var make_chart_3 = new google.visualization.LineChart(document.getElementById('make_chart_3'));
-
-	make_chart_3.draw(data, options);
+	var chart = new google.visualization.LineChart(document.getElementById('make_chart_3'));
+	chart.draw(data, options);
 }
