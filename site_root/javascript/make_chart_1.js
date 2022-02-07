@@ -59,7 +59,7 @@ function drawChart() {
 		curveType: 'function',
 		legend:"none",
 		colors: ['red'],
-		pointSize: 3,
+		pointSize: 5,
 		hAxis: {
 			format: 'MM/dd/yy',
 			gridlines: {count: 15}
