@@ -59,7 +59,7 @@ a {
 
 /* Tabella */
 table {
-	width: 100%;
+	width: 90%;
 	border-collapse: collapse;
 	border: 2px black solid;
 	white-space: nowrap
