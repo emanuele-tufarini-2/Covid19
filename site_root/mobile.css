@@ -79,9 +79,8 @@ tr:nth-child(n+12){
 	display: block;
 	width:100%;
 	height: 600px;
-	margin: 0;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* Cambiare il colore quando il mouse passa sopra al link */
