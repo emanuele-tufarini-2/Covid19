@@ -92,10 +92,3 @@ body {
 	padding-left: 5%;
 	padding-right: 5%;
 }
-
-#make_chart_1 {
-	border:solid;
-	width:100%;
-	height: 600px;
-	margin: 0;
-}
