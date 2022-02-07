@@ -29,8 +29,8 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-	var data = google.visualization.arrayToDataTable(item, true);;
-	console.log(JSON.stringify(data));
+	var data = google.visualization.arrayToDataTable(item, true);
+
 	var options = {
 		title: 'nuovi positivi tuscania',
 		curveType: 'function',

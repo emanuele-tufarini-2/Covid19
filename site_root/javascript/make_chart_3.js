@@ -29,7 +29,7 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-	var data = google.visualization.arrayToDataTable(item, true);;
+	var data = google.visualization.arrayToDataTable(item, true);
 	console.log(JSON.stringify(data));
 	var options = {
 		title: 'attualmente positivi tuscania',
@@ -45,7 +45,7 @@ function drawChart() {
 		}
 	};
 
-	var chart = new google.visualization.LineChart(document.getElementById('make_chart_3'));
+	var make_chart_3 = new google.visualization.LineChart(document.getElementById('make_chart_3'));
 
-	chart.draw(data, options);
+	make_chart_3.draw(data, options);
 }
