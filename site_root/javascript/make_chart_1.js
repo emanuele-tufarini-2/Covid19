@@ -60,7 +60,7 @@ function drawChart() {
 		legend:"none",
 		colors: ['red'],
 		hAxis: {
-			format: 'd/MM'
+			format: ''
 		},
 		chartArea: {
 			height: "90%",
@@ -82,7 +82,7 @@ function drawChart() {
 		legend:"none",
 		colors: ['green'],
 		hAxis: {
-			format: 'd/MM'
+			format: ''
 		},
 		chartArea: {
 			height: "90%",
@@ -106,7 +106,7 @@ function drawChart() {
 		legend:"none",
 		colors: ['blue'],
 		hAxis: {
-			format: 'd/MM'
+			format: ''
 		},
 		chartArea: {
 			height: "90%",
