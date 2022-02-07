@@ -67,7 +67,7 @@ function drawChart() {
 		},
 		chartArea: {
 			height: "70%",
-			width: "90%"
+			width: "85%"
 		}
 	};
 
@@ -93,7 +93,7 @@ function drawChart() {
 		},
 		chartArea: {
 			height: "70%",
-			width: "90%"
+			width: "85%"
 		}
 	};
 
@@ -120,7 +120,7 @@ function drawChart() {
 		},
 		chartArea: {
 			height: "70%",
-			width: "90%"
+			width: "85%"
 		}
 	};
 
