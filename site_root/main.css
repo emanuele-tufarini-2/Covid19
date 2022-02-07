@@ -76,7 +76,6 @@ tr:nth-child(n+12){
 
 /* Grafici */
 .chart {
-	border: 2px black solid;
 	display: block;
 	width:60%;
 	height: 600px;
