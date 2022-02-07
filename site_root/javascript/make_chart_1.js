@@ -61,8 +61,8 @@ function drawChart() {
 		colors: ['red'],
 		pointSize: 5,
 		hAxis: {
-			format: 'M/d/yy',
-			gridlines: {count: 15}
+			format: 'dd/MM/yy',
+			slantedText: true
 		},
 		chartArea: {
 			height: "80%",
@@ -85,8 +85,8 @@ function drawChart() {
 		colors: ['green'],
 		pointSize: 5,
 		hAxis: {
-			format: 'M/d/yy',
-			gridlines: {count: 15}
+			format: 'dd/MM/yy',
+			slantedText: true
 		},
 		chartArea: {
 			height: "80%",
@@ -111,8 +111,8 @@ function drawChart() {
 		colors: ['blue'],
 		pointSize: 5,
 		hAxis: {
-			format: 'M/d/yy',
-			gridlines: {count: 15}
+			format: 'dd/MM/yy',
+			slantedText: true
 		},
 		chartArea: {
 			height: "80%",
