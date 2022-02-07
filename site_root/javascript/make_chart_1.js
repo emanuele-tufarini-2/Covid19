@@ -59,7 +59,7 @@ function drawChart() {
 		curveType: 'function',
 		legend:"none",
 		colors: ['red'],
-		pointSize: 5,
+		pointSize: 3,
 		hAxis: {
 			format: 'dd/MM/yy',
 			slantedText: true
@@ -83,7 +83,7 @@ function drawChart() {
 		curveType: 'function',
 		legend:"none",
 		colors: ['green'],
-		pointSize: 5,
+		pointSize: 3,
 		hAxis: {
 			format: 'dd/MM/yy',
 			slantedText: true
@@ -109,7 +109,7 @@ function drawChart() {
 		curveType: 'function',
 		legend:"none",
 		colors: ['blue'],
-		pointSize: 5,
+		pointSize: 3,
 		hAxis: {
 			format: 'dd/MM/yy',
 			slantedText: true
