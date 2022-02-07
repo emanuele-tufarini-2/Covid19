@@ -24,21 +24,22 @@ ul li:hover{
 }
 
 .main_menu {
-	font-size: 60px; 
+	font-size: 2em; 
 }
 
 #main_icon {
-	width: 125px; 
+	width: 60px; 
+	padding-top: 13px;
 }
 
 /* CSS */
 
 h1 {
-	font-size: 4em; 
+	font-size: 2em; 
 }
 
 p {
-	font-size: 40px; 
+	font-size: 18px; 
 }
   
 img {
@@ -47,7 +48,7 @@ img {
 
 /* Non sottolineare il link */
 a {
-	font-size: 40px; 
+	font-size: 18px; 
 	text-decoration: none;
 }
 
@@ -64,7 +65,7 @@ table {
 }
 
 td {
-	font-size: 40px; 
+	font-size: 18px; 
 	border: 1px black solid;
 	padding: 5px;
 }
@@ -83,10 +84,12 @@ tr:nth-child(n+12){
 	padding-bottom: 20px;
 }
 
+/* Cambiare il colore quando il mouse passa sopra al link */
 a:hover{
 	color:#2EA3F2;
 }
 
+/* Spazio bianco a destra e a sinistra */
 body {
 	padding-left: 5%;
 	padding-right: 5%;
