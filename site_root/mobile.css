@@ -59,14 +59,13 @@ a {
 
 /* Tabella */
 table {
-	width: 90%;
 	border-collapse: collapse;
 	border: 2px black solid;
-	white-space: nowrap
+	white-space: nowrap;
 }
 
 td {
-	font-size: 16px; 
+	font-size: 14px; 
 	border: 1px black solid;
 	padding: 5px;
 }
