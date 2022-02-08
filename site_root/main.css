@@ -80,8 +80,6 @@ tr:nth-child(n+12){
 	display: block;
 	width:60%;
 	height: 800px;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 
 /* Cambiare il colore quando il mouse passa sopra al link */
