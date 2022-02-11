@@ -1,4 +1,4 @@
-// REQUEST DEI DATI DEL CSV
+// CSV DATA REQUEST
 var request = new XMLHttpRequest();  
 request.open("GET", "https://raw.githubusercontent.com/emanuele-tufarini-2/Tuscania-Covid19-Dataset/main/andamento_contagi_covid19_tuscania.csv", false);   
 request.send(null);  
@@ -9,49 +9,46 @@ for (var i = 0; i < jsonObject.length; i++) {
 }
 // Retrived data from csv file content
 var csvSlice = csvData.slice(1,90);
-// inserire la prima colonna dell oggetto in un array
+// Insert the first column of the object in an array
 var col00 = csvSlice.map(d => d[0]);
-// convertire l array str in date
+// Convert str array to dates
 var col00 = col00.map(d => new Date(d))
 
-
-// PRIMO GRAFICO
-// inserire una colonna dell oggetto in un array
+// FIRST CHART
+// Insert an object column in an array
 var col01 = csvSlice.map(d => d[1]);
-// convertire l array str in int
+// Convert array str to int
 var col01 = col01.map(i=>Number(i));
-// unire due array in un array multidimensionale
+// Merge two arrays into one multidimensional array
 var item_1 = col00.map(function(v,i) {
 	return [v, col01[i]];
 });
 
-// SECONDO GRAFICO
-// inserire una colonna dell oggetto in un array
+// SECOND CHART
+// Insert an object column in an array
 var col02 = csvSlice.map(d => d[2]);
-// convertire l array str in int
+// Convert array str to int
 var col02 = col02.map(i=>Number(i));
-// unire due array in un array multidimensionale
+// Merge two arrays into one multidimensional array
 var item_2 = col00.map(function(v,i) {
 	return [v, col02[i]];
 });
 
-// TERZO GRAFICO
-// inserire una colonna dell oggetto in un array
+// THIRD CHART
+// Insert an object column in an array
 var col03 = csvSlice.map(d => d[3]);
-// convertire l array str in int
+// Convert array str to int
 var col03 = col03.map(i=>Number(i));
-// unire due array in un array multidimensionale
+// Merge two arrays into one multidimensional array
 var item_3 = col00.map(function(v,i) {
 	return [v, col03[i]];
 });
 
-
-
-// GRAFICO NUOVI POSITIVI TUSCANIA
 google.charts.load('current', {'packages':['corechart'], language: 'it'});
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
+	// CHART POSITIVE
 	var data = google.visualization.arrayToDataTable(item_1, true);
 
 	var options = {
@@ -72,12 +69,9 @@ function drawChart() {
 	};
 
 	var chart = new google.visualization.LineChart(document.getElementById('make_chart_1'));
-	
 	chart.draw(data, options);
-	
-	
-	
-	
+
+	// CHART NEGATIVES
 	var data = google.visualization.arrayToDataTable(item_2, true);;
 	console.log(JSON.stringify(data));
 	var options = {
@@ -98,13 +92,9 @@ function drawChart() {
 	};
 
 	var chart = new google.visualization.LineChart(document.getElementById('make_chart_2'));
-
 	chart.draw(data, options);
 	
-	
-	
-	
-	
+	// CHART TOTAL POSITIVE
 	var data = google.visualization.arrayToDataTable(item_3, true);;
 	console.log(JSON.stringify(data));
 	var options = {
@@ -125,7 +115,6 @@ function drawChart() {
 	};
 
 	var chart = new google.visualization.LineChart(document.getElementById('make_chart_3'));
-	
 	chart.draw(data, options);
 	
 	
