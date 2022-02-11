@@ -116,7 +116,4 @@ function drawChart() {
 
 	var chart = new google.visualization.LineChart(document.getElementById('make_chart_3'));
 	chart.draw(data, options);
-	
-	
-	
 }
